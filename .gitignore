@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# stale ARC v3 boards, kept locally for reference
+*_v3_*.json
+_wnba_arc_board_v3_*.json

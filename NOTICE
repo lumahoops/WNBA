@@ -1,0 +1,35 @@
+LUMA WNBA Stint Corpus — licensing
+=========================================
+
+Two licences apply to this repository.
+
+  DATA — everything under data/, including the stint files, the metric boards,
+  crosswalk.csv, quality.json and manifest.json.
+      Creative Commons Attribution 4.0 International (CC BY 4.0)
+      Full text: LICENSE
+      You may share and adapt the data, including commercially, provided you
+      give appropriate credit, link to the licence, and indicate if changes
+      were made.
+
+  CODE — loaders and any other software in this repository.
+      MIT, Copyright (c) 2026 CourtShare LLC
+      Full text: LICENSE-CODE
+
+Attribution
+-----------
+When using the data, cite the corpus rather than this file. CITATION.cff
+carries machine-readable citation metadata; GitHub renders it as "Cite this
+repository" in the sidebar.
+
+  Awoyemi, A. (2026). LUMA WNBA Stint Corpus (Version 1.0.0) [Data set].
+
+Upstream sources
+----------------
+The corpus is derived from publicly accessible play-by-play and box-score
+feeds. Those feeds carry their own terms, which are not superseded by the
+licences above. SOURCES.md documents each source, what was taken from it, and
+the basis on which it was used.
+
+The CC BY 4.0 licence applies to this reconstruction — the stint segmentation,
+the identity reconciliation, and the derived metric boards — not to the
+underlying factual records, which are not owned by anyone.

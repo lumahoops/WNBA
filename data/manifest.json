@@ -1,0 +1,248 @@
+{
+ "league": "WNBA",
+ "schema": "luma_stints_v2",
+ "exported": "2026-08-17T01:10:51",
+ "files": {
+  "stints/rs_2003.json": {
+   "games": 237,
+   "stints": 9708,
+   "sha256": "c4c412331135ef60"
+  },
+  "stints/rs_2004.json": {
+   "games": 218,
+   "stints": 9280,
+   "sha256": "f856c9eaf7c9d20d"
+  },
+  "stints/rs_2005.json": {
+   "games": 222,
+   "stints": 9741,
+   "sha256": "82eb26818e78e68d"
+  },
+  "stints/rs_2006.json": {
+   "games": 237,
+   "stints": 10328,
+   "sha256": "bcffaab62fc9a775"
+  },
+  "stints/rs_2007.json": {
+   "games": 219,
+   "stints": 10205,
+   "sha256": "c9b79b670ca4a9ed"
+  },
+  "stints/rs_2008.json": {
+   "games": 236,
+   "stints": 11797,
+   "sha256": "df2cf7ff99b5ee34"
+  },
+  "stints/rs_2009.json": {
+   "games": 219,
+   "stints": 10534,
+   "sha256": "c16532fa3575dfd6"
+  },
+  "stints/rs_2010.json": {
+   "games": 205,
+   "stints": 9531,
+   "sha256": "93e157026c87f9e2"
+  },
+  "stints/rs_2011.json": {
+   "games": 204,
+   "stints": 9139,
+   "sha256": "2fafa91874067f5a"
+  },
+  "stints/rs_2012.json": {
+   "games": 202,
+   "stints": 9264,
+   "sha256": "30a4bd2064f7c44c"
+  },
+  "stints/rs_2013.json": {
+   "games": 204,
+   "stints": 9165,
+   "sha256": "a9cf10202e8d9b0f"
+  },
+  "stints/rs_2014.json": {
+   "games": 204,
+   "stints": 9312,
+   "sha256": "06f4a88dfcc479b6"
+  },
+  "stints/rs_2015.json": {
+   "games": 205,
+   "stints": 9804,
+   "sha256": "7a26ad4c5d1a48e8"
+  },
+  "stints/rs_2016.json": {
+   "games": 201,
+   "stints": 9261,
+   "sha256": "1636ac02915f6f31"
+  },
+  "stints/rs_2017.json": {
+   "games": 205,
+   "stints": 9658,
+   "sha256": "694cbe76b49d143c"
+  },
+  "stints/rs_2018.json": {
+   "games": 202,
+   "stints": 10552,
+   "sha256": "21e40bd99cc67957"
+  },
+  "stints/rs_2019.json": {
+   "games": 203,
+   "stints": 10100,
+   "sha256": "86c75c4a5ceaae6e"
+  },
+  "stints/rs_2020.json": {
+   "games": 131,
+   "stints": 6729,
+   "sha256": "338d48cff2890c14"
+  },
+  "stints/rs_2021.json": {
+   "games": 194,
+   "stints": 9410,
+   "sha256": "ad33e349b65d87f4"
+  },
+  "stints/rs_2022.json": {
+   "games": 218,
+   "stints": 11515,
+   "sha256": "484e0ef48c3014d5"
+  },
+  "stints/rs_2023.json": {
+   "games": 242,
+   "stints": 12502,
+   "sha256": "669bb04681d06071"
+  },
+  "stints/rs_2024.json": {
+   "games": 242,
+   "stints": 11626,
+   "sha256": "cb9bc6e340a1ebcc"
+  },
+  "stints/rs_2025.json": {
+   "games": 288,
+   "stints": 15344,
+   "sha256": "93f748cfcb1091b9"
+  },
+  "stints/rs_2026.json": {
+   "games": 256,
+   "stints": 13830,
+   "sha256": "ebd8696e8d9b88b2"
+  },
+  "stints/po_2003.json": {
+   "games": 19,
+   "stints": 656,
+   "sha256": "de43d1a313b633d8"
+  },
+  "stints/po_2004.json": {
+   "games": 19,
+   "stints": 854,
+   "sha256": "4f6f7629247ca250"
+  },
+  "stints/po_2005.json": {
+   "games": 17,
+   "stints": 752,
+   "sha256": "44f6f190c4e64f4c"
+  },
+  "stints/po_2006.json": {
+   "games": 19,
+   "stints": 874,
+   "sha256": "37536c82407631c7"
+  },
+  "stints/po_2007.json": {
+   "games": 21,
+   "stints": 1010,
+   "sha256": "f7bbf76735fdb3a7"
+  },
+  "stints/po_2008.json": {
+   "games": 20,
+   "stints": 996,
+   "sha256": "2e1160b736cf8951"
+  },
+  "stints/po_2009.json": {
+   "games": 21,
+   "stints": 930,
+   "sha256": "8d0c76ae467d2703"
+  },
+  "stints/po_2010.json": {
+   "games": 16,
+   "stints": 673,
+   "sha256": "128e6de02f9cd0c5"
+  },
+  "stints/po_2011.json": {
+   "games": 19,
+   "stints": 831,
+   "sha256": "c2eb20389f30ca21"
+  },
+  "stints/po_2012.json": {
+   "games": 18,
+   "stints": 722,
+   "sha256": "afad0466ad2fe945"
+  },
+  "stints/po_2013.json": {
+   "games": 17,
+   "stints": 693,
+   "sha256": "f4538a3acb16d1e2"
+  },
+  "stints/po_2014.json": {
+   "games": 18,
+   "stints": 762,
+   "sha256": "4b454d74732db3fb"
+  },
+  "stints/po_2015.json": {
+   "games": 21,
+   "stints": 937,
+   "sha256": "5ab9f6f39acd58f1"
+  },
+  "stints/po_2016.json": {
+   "games": 15,
+   "stints": 661,
+   "sha256": "a3c36d88b1ce358e"
+  },
+  "stints/po_2017.json": {
+   "games": 15,
+   "stints": 642,
+   "sha256": "780f2674f76ccbd3"
+  },
+  "stints/po_2018.json": {
+   "games": 17,
+   "stints": 674,
+   "sha256": "a6ffe6e4222838b4"
+  },
+  "stints/po_2019.json": {
+   "games": 16,
+   "stints": 733,
+   "sha256": "c03dbc41d08e27bf"
+  },
+  "stints/po_2020.json": {
+   "games": 15,
+   "stints": 666,
+   "sha256": "283964b6704a545b"
+  },
+  "stints/po_2021.json": {
+   "games": 17,
+   "stints": 881,
+   "sha256": "d1105dbe7ef58d51"
+  },
+  "stints/po_2022.json": {
+   "games": 23,
+   "stints": 1055,
+   "sha256": "65d283be22c8fc94"
+  },
+  "stints/po_2023.json": {
+   "games": 20,
+   "stints": 789,
+   "sha256": "71314c0349b00771"
+  },
+  "stints/po_2024.json": {
+   "games": 22,
+   "stints": 955,
+   "sha256": "0086bd33ed0a0b13"
+  },
+  "stints/po_2025.json": {
+   "games": 24,
+   "stints": 1212,
+   "sha256": "ea3df3156be53ddf"
+  },
+  "stints/po_2026.json": {
+   "games": 0,
+   "stints": 0,
+   "sha256": "44136fa355b3678a"
+  }
+ },
+ "players": 976
+}

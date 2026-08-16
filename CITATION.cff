@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "LUMA WNBA Stint Corpus"
+version: "1.0.0"
+date-released: "2026-08-16"
+license: CC-BY-4.0
+url: "https://github.com/lumahoops/WNBA"
+repository-code: "https://github.com/lumahoops/WNBA"
+abstract: >
+  Lineup-stint corpus for the Women's National Basketball Association. A stint is a segment
+  of game time during which the ten players on court do not change. The corpus contains 267,293
+  stints across 24 regular seasons (2003-2026) and 23 postseasons (2003-2025), covering 5,623
+  games, current through 2026-08-15. Reconstructed from play-by-play substitution events;
+  each record gives both five-player lineups, duration in seconds, points scored by each team,
+  and a sixteen-element event tally per team. 974 players are identified by persistent
+  identifiers with a crosswalk to WNBA Stats and ESPN source identifiers. Validated against
+  independently sourced box scores; per-season reconstruction diagnostics are distributed
+  with the data.
+authors:
+  - family-names: Awoyemi
+    given-names: Ayo
+    # orcid: https://orcid.org/0000-0000-0000-0000
+# identifiers:            # uncomment after the first Zenodo release
+#   - type: doi
+#     value: 10.5281/zenodo.0000000
+#     description: Concept DOI resolving to the latest version.
+keywords:
+  - WNBA
+  - basketball
+  - women's basketball
+  - sports analytics
+  - play-by-play
+  - lineup data
+  - stint data
+  - possession data
+  - regularized adjusted plus-minus
+  - RAPM
+  - plus-minus
+  - player impact metric
+  - panel data
+contact:
+  - name: Ayo Awoyemi
+    email: aayoawoyemi@gmail.com

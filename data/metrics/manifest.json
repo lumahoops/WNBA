@@ -1,0 +1,496 @@
+{
+ "league": "WNBA",
+ "schema": "luma_metrics_v1",
+ "rating": "arc_v2",
+ "exported": "2026-08-17T01:31:11",
+ "files": {
+  "arc/season_2003.json": {
+   "rows": 170,
+   "sha256": "7d147e6e445cfdb3"
+  },
+  "arc/alltime.json": {
+   "rows": 525,
+   "sha256": "c8f154e716c8438b"
+  },
+  "arc/season_2004.json": {
+   "rows": 164,
+   "sha256": "e6573b5086054133"
+  },
+  "arc/season_2005.json": {
+   "rows": 166,
+   "sha256": "0fce92a75005035b"
+  },
+  "arc/season_2006.json": {
+   "rows": 182,
+   "sha256": "928aa94ba7104049"
+  },
+  "arc/season_2007.json": {
+   "rows": 171,
+   "sha256": "3e67af697ae8d0dd"
+  },
+  "arc/season_2008.json": {
+   "rows": 191,
+   "sha256": "f36f9675e2064ee4"
+  },
+  "arc/season_2009.json": {
+   "rows": 161,
+   "sha256": "6e6d7c39f735b34f"
+  },
+  "arc/season_2010.json": {
+   "rows": 144,
+   "sha256": "76286d524785748c"
+  },
+  "arc/season_2011.json": {
+   "rows": 142,
+   "sha256": "2eca0ecc65c2b8a9"
+  },
+  "arc/season_2012.json": {
+   "rows": 146,
+   "sha256": "5ef0a5239017137e"
+  },
+  "arc/season_2013.json": {
+   "rows": 146,
+   "sha256": "a03dd113a6e8469a"
+  },
+  "arc/season_2014.json": {
+   "rows": 154,
+   "sha256": "0cc40ad6de9cbcb9"
+  },
+  "arc/season_2015.json": {
+   "rows": 159,
+   "sha256": "c81aaba5d7eb092b"
+  },
+  "arc/season_2016.json": {
+   "rows": 157,
+   "sha256": "02881a348a054a5e"
+  },
+  "arc/season_2017.json": {
+   "rows": 157,
+   "sha256": "180c712e84e913a9"
+  },
+  "arc/season_2018.json": {
+   "rows": 157,
+   "sha256": "b4178aa8a702e959"
+  },
+  "arc/season_2019.json": {
+   "rows": 156,
+   "sha256": "5b841f1642d10abd"
+  },
+  "arc/season_2020.json": {
+   "rows": 145,
+   "sha256": "946e0f1b7f43fe47"
+  },
+  "arc/season_2021.json": {
+   "rows": 154,
+   "sha256": "8edf97e197239c86"
+  },
+  "arc/season_2022.json": {
+   "rows": 166,
+   "sha256": "9cf605c968a4f420"
+  },
+  "arc/season_2023.json": {
+   "rows": 155,
+   "sha256": "1b8c3800246b8244"
+  },
+  "arc/season_2024.json": {
+   "rows": 157,
+   "sha256": "21dbaf334244c0f4"
+  },
+  "arc/season_2025.json": {
+   "rows": 181,
+   "sha256": "1f4918b84ffbc72a"
+  },
+  "arc/season_2026.json": {
+   "rows": 225,
+   "sha256": "5928cac74ef911be"
+  },
+  "arc/playoffs.json": {
+   "rows": 567,
+   "sha256": "f9fd8ee30075941f"
+  },
+  "od/2003.json": {
+   "rows": 176,
+   "sha256": "7590ec0820d095cf"
+  },
+  "od/2004.json": {
+   "rows": 164,
+   "sha256": "ed47ff59753b6098"
+  },
+  "od/2005.json": {
+   "rows": 169,
+   "sha256": "4b15c0972d47ef85"
+  },
+  "od/2006.json": {
+   "rows": 182,
+   "sha256": "d43a9ddae3ad7a53"
+  },
+  "od/2007.json": {
+   "rows": 172,
+   "sha256": "7e3c35aead7a16c6"
+  },
+  "od/2008.json": {
+   "rows": 191,
+   "sha256": "afbf4317fe8ff91e"
+  },
+  "od/2009.json": {
+   "rows": 161,
+   "sha256": "f9223797c5f574fd"
+  },
+  "od/2010.json": {
+   "rows": 144,
+   "sha256": "937f183ca6ce510a"
+  },
+  "od/2011.json": {
+   "rows": 142,
+   "sha256": "62f34237a86622de"
+  },
+  "od/2012.json": {
+   "rows": 146,
+   "sha256": "7d431aef260dd777"
+  },
+  "od/2013.json": {
+   "rows": 146,
+   "sha256": "7ccb914b63d8cd38"
+  },
+  "od/2014.json": {
+   "rows": 154,
+   "sha256": "3b70f2b6d9853c28"
+  },
+  "od/2015.json": {
+   "rows": 159,
+   "sha256": "b35a605cf589bdc6"
+  },
+  "od/2016.json": {
+   "rows": 157,
+   "sha256": "5e32c43b4a6832c6"
+  },
+  "od/2017.json": {
+   "rows": 157,
+   "sha256": "c3e8140709588541"
+  },
+  "od/2018.json": {
+   "rows": 157,
+   "sha256": "3518a56ce32afb84"
+  },
+  "od/2019.json": {
+   "rows": 156,
+   "sha256": "41847b7aad70fb96"
+  },
+  "od/2020.json": {
+   "rows": 145,
+   "sha256": "24a17c5ca667c228"
+  },
+  "od/2021.json": {
+   "rows": 154,
+   "sha256": "07e925d57c2c8c32"
+  },
+  "od/2022.json": {
+   "rows": 168,
+   "sha256": "cdc879f4fefc42c0"
+  },
+  "od/2023.json": {
+   "rows": 156,
+   "sha256": "6b5e62d9f9c4c50e"
+  },
+  "od/2024.json": {
+   "rows": 159,
+   "sha256": "e9d69f522e1632fe"
+  },
+  "od/2025.json": {
+   "rows": 183,
+   "sha256": "89fa90d8dc2dee55"
+  },
+  "od/2026.json": {
+   "rows": 225,
+   "sha256": "5e15a4df405f912e"
+  },
+  "channels/leaffactor_2003.json": {
+   "rows": 4,
+   "sha256": "fd39bca1728430b2"
+  },
+  "channels/leaffactor_2004.json": {
+   "rows": 4,
+   "sha256": "ae984c9b1d73879a"
+  },
+  "channels/leaffactor_2005.json": {
+   "rows": 4,
+   "sha256": "9935c8f1e9ecd0fa"
+  },
+  "channels/leaffactor_2006.json": {
+   "rows": 4,
+   "sha256": "d4d7ae9c7408dca2"
+  },
+  "channels/leaffactor_2007.json": {
+   "rows": 4,
+   "sha256": "4237952798728f60"
+  },
+  "channels/leaffactor_2008.json": {
+   "rows": 4,
+   "sha256": "969ca6c9d0e1977f"
+  },
+  "channels/leaffactor_2009.json": {
+   "rows": 4,
+   "sha256": "436ec5e3955a6bd7"
+  },
+  "channels/leaffactor_2010.json": {
+   "rows": 4,
+   "sha256": "03b6030af09e7fee"
+  },
+  "channels/leaffactor_2011.json": {
+   "rows": 4,
+   "sha256": "beb21c7f0b853b8c"
+  },
+  "channels/leaffactor_2012.json": {
+   "rows": 4,
+   "sha256": "4600ac4e1065a10c"
+  },
+  "channels/leaffactor_2013.json": {
+   "rows": 4,
+   "sha256": "184915e02c66df84"
+  },
+  "channels/leaffactor_2014.json": {
+   "rows": 4,
+   "sha256": "912974e22ac6ceab"
+  },
+  "channels/leaffactor_2015.json": {
+   "rows": 4,
+   "sha256": "0170ff18fb620506"
+  },
+  "channels/leaffactor_2016.json": {
+   "rows": 4,
+   "sha256": "3cefedc0771e812e"
+  },
+  "channels/leaffactor_2017.json": {
+   "rows": 4,
+   "sha256": "fb35f72ac7596430"
+  },
+  "channels/leaffactor_2018.json": {
+   "rows": 4,
+   "sha256": "489f9e3111ba49a4"
+  },
+  "channels/leaffactor_2019.json": {
+   "rows": 4,
+   "sha256": "185738b4a7346b31"
+  },
+  "channels/leaffactor_2020.json": {
+   "rows": 4,
+   "sha256": "0ed593ec98b65417"
+  },
+  "channels/leaffactor_2021.json": {
+   "rows": 4,
+   "sha256": "2c9ed08f501e9140"
+  },
+  "channels/leaffactor_2022.json": {
+   "rows": 4,
+   "sha256": "f7a4413a0e32424a"
+  },
+  "channels/leaffactor_2023.json": {
+   "rows": 4,
+   "sha256": "efaa159bd04fc86a"
+  },
+  "channels/leaffactor_2024.json": {
+   "rows": 4,
+   "sha256": "161e5a1666436c72"
+  },
+  "channels/leaffactor_2025.json": {
+   "rows": 4,
+   "sha256": "1b5f9e427733cbf4"
+  },
+  "channels/leaffactor_2026.json": {
+   "rows": 4,
+   "sha256": "0929d35c326a6507"
+  },
+  "channels/fingerprint_2003.json": {
+   "rows": 2,
+   "sha256": "4cba298053d3f60f"
+  },
+  "channels/fingerprint_2004.json": {
+   "rows": 2,
+   "sha256": "21f7311345549506"
+  },
+  "channels/fingerprint_2005.json": {
+   "rows": 2,
+   "sha256": "8ba36ca5ba18b976"
+  },
+  "channels/fingerprint_2006.json": {
+   "rows": 2,
+   "sha256": "17db0a7700b07053"
+  },
+  "channels/fingerprint_2007.json": {
+   "rows": 2,
+   "sha256": "aa75c1e91b20781d"
+  },
+  "channels/fingerprint_2008.json": {
+   "rows": 2,
+   "sha256": "900530d4d8ec36ce"
+  },
+  "channels/fingerprint_2009.json": {
+   "rows": 2,
+   "sha256": "420ea6a5f3daa420"
+  },
+  "channels/fingerprint_2010.json": {
+   "rows": 2,
+   "sha256": "ed07e08be81bec86"
+  },
+  "channels/fingerprint_2011.json": {
+   "rows": 2,
+   "sha256": "b57e04ca5932d575"
+  },
+  "channels/fingerprint_2012.json": {
+   "rows": 2,
+   "sha256": "395798a680e41689"
+  },
+  "channels/fingerprint_2013.json": {
+   "rows": 2,
+   "sha256": "2d3fc279e5ecada5"
+  },
+  "channels/fingerprint_2014.json": {
+   "rows": 2,
+   "sha256": "63822a2b6173a826"
+  },
+  "channels/fingerprint_2015.json": {
+   "rows": 2,
+   "sha256": "4485818e634fec43"
+  },
+  "channels/fingerprint_2016.json": {
+   "rows": 2,
+   "sha256": "8d09255ed92a4141"
+  },
+  "channels/fingerprint_2017.json": {
+   "rows": 2,
+   "sha256": "1c4d10462ed8d4ab"
+  },
+  "channels/fingerprint_2018.json": {
+   "rows": 2,
+   "sha256": "0e98434f81bb6da8"
+  },
+  "channels/fingerprint_2019.json": {
+   "rows": 2,
+   "sha256": "236ad0d68e7a4acf"
+  },
+  "channels/fingerprint_2020.json": {
+   "rows": 2,
+   "sha256": "debf990e68c2ef62"
+  },
+  "channels/fingerprint_2021.json": {
+   "rows": 2,
+   "sha256": "09d9def9928ae3eb"
+  },
+  "channels/fingerprint_2022.json": {
+   "rows": 2,
+   "sha256": "d97c0c74b98d7f4e"
+  },
+  "channels/fingerprint_2023.json": {
+   "rows": 2,
+   "sha256": "aede537de9d815d9"
+  },
+  "channels/fingerprint_2024.json": {
+   "rows": 2,
+   "sha256": "8797e754fb6fa7cb"
+  },
+  "channels/fingerprint_2025.json": {
+   "rows": 2,
+   "sha256": "ae3cb1d3f779c9a2"
+  },
+  "channels/fingerprint_2026.json": {
+   "rows": 2,
+   "sha256": "14e62d752ff8cfa0"
+  },
+  "channels/boxfactors_2003.json": {
+   "rows": 170,
+   "sha256": "b8b2457129433788"
+  },
+  "channels/boxfactors_2004.json": {
+   "rows": 164,
+   "sha256": "d207de1307904c73"
+  },
+  "channels/boxfactors_2005.json": {
+   "rows": 166,
+   "sha256": "7454ea569f73854f"
+  },
+  "channels/boxfactors_2006.json": {
+   "rows": 182,
+   "sha256": "5487861c484b7015"
+  },
+  "channels/boxfactors_2007.json": {
+   "rows": 171,
+   "sha256": "d2f3883bf76d37a3"
+  },
+  "channels/boxfactors_2008.json": {
+   "rows": 192,
+   "sha256": "b9fc6cadf99d8ecf"
+  },
+  "channels/boxfactors_2009.json": {
+   "rows": 161,
+   "sha256": "57604767c7a18395"
+  },
+  "channels/boxfactors_2010.json": {
+   "rows": 144,
+   "sha256": "5ac8928819cc7b26"
+  },
+  "channels/boxfactors_2011.json": {
+   "rows": 142,
+   "sha256": "b542caea4832115f"
+  },
+  "channels/boxfactors_2012.json": {
+   "rows": 146,
+   "sha256": "5c79a759c1158a27"
+  },
+  "channels/boxfactors_2013.json": {
+   "rows": 146,
+   "sha256": "5eb1f06f225bc4b8"
+  },
+  "channels/boxfactors_2014.json": {
+   "rows": 154,
+   "sha256": "0aaccbedc6cf5da8"
+  },
+  "channels/boxfactors_2015.json": {
+   "rows": 159,
+   "sha256": "bd120e643a90b649"
+  },
+  "channels/boxfactors_2016.json": {
+   "rows": 157,
+   "sha256": "bb753c8f33023e70"
+  },
+  "channels/boxfactors_2017.json": {
+   "rows": 157,
+   "sha256": "4b542af1187092cd"
+  },
+  "channels/boxfactors_2018.json": {
+   "rows": 157,
+   "sha256": "8dda01e02ddfcb8b"
+  },
+  "channels/boxfactors_2019.json": {
+   "rows": 156,
+   "sha256": "48424fab967fa7f6"
+  },
+  "channels/boxfactors_2020.json": {
+   "rows": 145,
+   "sha256": "895d8b9b085d02f0"
+  },
+  "channels/boxfactors_2021.json": {
+   "rows": 154,
+   "sha256": "3c371dc587383420"
+  },
+  "channels/boxfactors_2022.json": {
+   "rows": 166,
+   "sha256": "c7689e8c0409be1f"
+  },
+  "channels/boxfactors_2023.json": {
+   "rows": 155,
+   "sha256": "ee84e6b3f10e8601"
+  },
+  "channels/boxfactors_2024.json": {
+   "rows": 157,
+   "sha256": "13901d7a7366712c"
+  },
+  "channels/boxfactors_2025.json": {
+   "rows": 181,
+   "sha256": "8c401aa654d349b4"
+  },
+  "channels/boxfactors_2026.json": {
+   "rows": 220,
+   "sha256": "6fec8a7029200f91"
+  }
+ }
+}
