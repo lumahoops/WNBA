@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
-title: "LUMA WNBA Stint Corpus"
+title: "LUMA WNBA Stint and ARC Corpus"
 version: "1.0.0"
 date-released: "2026-08-16"
 license: CC-BY-4.0

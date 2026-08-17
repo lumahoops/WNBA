@@ -1,4 +1,4 @@
-# METRICS.md — LUMA WNBA Metric Boards
+# METRICS.md — LUMA WNBA Stint and ARC Corpus — Metric Boards
 
 **Schema version:** `luma_metrics_v1` · **Rating version:** ARC v2
 Companion to [SCHEMA.md](SCHEMA.md), which documents the stint corpus these are computed from.

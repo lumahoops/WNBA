@@ -1,6 +1,6 @@
 # SCHEMA
 
-Field definitions for the LUMA WNBA stint corpus. Schema version `luma_stints_v2`.
+Field definitions for the LUMA WNBA Stint and ARC Corpus. Schema version `luma_stints_v2`.
 
 - [Files](#files)
 - [Stint record](#stint-record)

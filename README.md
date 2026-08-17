@@ -1,4 +1,4 @@
-# LUMA WNBA Stint Corpus
+# LUMA WNBA Stint and ARC Corpus
 
 LUMA is an open-source project measuring basketball player impact. This repository holds the WNBA
 lineup-stint corpus and the ratings derived from it.
@@ -123,7 +123,7 @@ Data under `data/` is [CC BY 4.0](LICENSE); code is [MIT](CODE-LICENSE.txt). Sou
 [SOURCES.md](SOURCES.md). Not affiliated with the WNBA or ESPN.
 
 ```
-Awoyemi, A. (2026). LUMA WNBA Stint Corpus (Version 1.0.0) [Data set].
+Awoyemi, A. (2026). LUMA WNBA Stint and ARC Corpus (Version 1.0.0) [Data set].
 https://github.com/lumahoops/WNBA
 ```
 
