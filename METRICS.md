@@ -12,17 +12,38 @@ WNBA Stats and ESPN identifiers.
 
 ```
 data/metrics/
-  arc/alltime.json              career board, 2003-2026, 525 players
-  arc/season_2003.json … season_2026.json    24 single-season boards
-  arc/playoffs.json             postseason board, 2003-2025, 567 rows
-  od/2003.json … od/2026.json   offence/defence split, 24 seasons
-  channels/leaffactor_{yr}.json    24 on/off channels per player, 24 seasons
-  channels/fingerprint_{yr}.json   shot-profile rates, 24 seasons
-  channels/boxfactors_{yr}.json    Box+ inputs, 24 seasons
-  manifest.json                 SHA-256 per file, row counts, export timestamp
+  arc/alltime.json                    career board, 2003-2026, 525 players
+  arc/season_{2003..2026}.json        24 single-season boards
+  arc/playoffs.json                   postseason board, 2003-2025
+  arc/windows/{n}yr_{y0}_{y1}.json    84 multi-year boards, 2 to 5-season spans
+  arc/decay/{y0}_{y1}_asof{d}_hl{h}.json  26 time-decayed boards
+  arc/playoffs_windows/{y0}_{y1}.json 12 postseason boards by span
+  od/{2003..2026}.json                offence/defence split, 24 seasons
+  od/windows/{n}yr_{y0}_{y1}.json     85 multi-year splits
+  od/playoffs/                        12 postseason splits
+  channels/leaffactor_{yr}.json       24 on/off channels per player
+  channels/fingerprint_{yr}.json      shot-profile rates
+  channels/boxfactors_{yr}.json       Box+ inputs
+  channels/boxdecomp_{yr}.json        Box+ broken into contributing terms
+  manifest.json                       SHA-256 per file, row counts, export timestamp
 ```
 
-122 files, 5.7 MB.
+365 files.
+
+### Windows
+
+A board covering more than one season pools the stints of those seasons into a single fit rather
+than averaging separate season boards. Spans of 2, 3, 4 and 5 seasons are provided, along with the
+full 2003-2026 board in `arc/alltime.json`. Longer spans carry more possessions per player and
+therefore narrower intervals, at the cost of treating a player as constant across the window.
+
+### Time decay
+
+Files under `arc/decay/` weight each possession by recency: a possession `d` days before the
+as-of date carries weight `0.5 ** (d / halflife)`. The half-life is 45 days and is recorded in
+the filename and in the board's `halflife` field. These boards answer what a player's rating was
+at a point in the season rather than at its end, so they are the ones to use for in-season
+tracking. The `asof` field states the evaluation date.
 
 ---
 
