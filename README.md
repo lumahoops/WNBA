@@ -5,6 +5,7 @@
 LUMA is an open-source project measuring basketball player impact. This repository holds WNBA
 lineup-stint data and the ratings derived from it.
 
+Site: https://court-share.com/luma
 
 
 ## Contents
