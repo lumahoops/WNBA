@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
+doi: 10.5281/zenodo.21972004
 title: "LUMA WNBA Stint and Lineup Data"
 version: "1.0.0"
 date-released: "2026-08-16"
@@ -21,10 +22,10 @@ authors:
   - family-names: Awoyemi
     given-names: Ayo
     # orcid: https://orcid.org/0000-0000-0000-0000
-# identifiers:            # uncomment after the first Zenodo release
-#   - type: doi
-#     value: 10.5281/zenodo.0000000
-#     description: Concept DOI resolving to the latest version.
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21972004
+    description: Concept DOI resolving to the latest version.
 keywords:
   - WNBA
   - basketball

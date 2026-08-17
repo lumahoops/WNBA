@@ -1,5 +1,7 @@
 # LUMA WNBA Stint and Lineup Data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21972004.svg)](https://doi.org/10.5281/zenodo.21972004)
+
 LUMA is an open-source project measuring basketball player impact. This repository holds WNBA
 lineup-stint data and the ratings derived from it.
 
@@ -124,7 +126,7 @@ Data under `data/` is [CC BY 4.0](LICENSE); code is [MIT](CODE-LICENSE.txt). Sou
 
 ```
 Awoyemi, A. (2026). LUMA WNBA Stint and Lineup Data (Version 1.0.0) [Data set].
-https://github.com/lumahoops/WNBA
+Zenodo. https://doi.org/10.5281/zenodo.21972004
 ```
 
 [CITATION.cff](CITATION.cff) · aayoawoyemi@gmail.com
