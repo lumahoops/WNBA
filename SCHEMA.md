@@ -1,6 +1,6 @@
 # SCHEMA
 
-Field definitions for the LUMA WNBA Stint and ARC Corpus. Schema version `luma_stints_v2`.
+Field definitions for the LUMA WNBA Stint and Lineup Data. Schema version `luma_stints_v2`.
 
 - [Files](#files)
 - [Stint record](#stint-record)
@@ -63,7 +63,7 @@ slots exist in 534,586. Filter on `len(row[0]) == 5` where strict lineups are re
 ## Tally vector
 
 Sixteen integers counting the events produced by that team's offence during the stint. The layout
-matches the NBA corpus, so one reader serves both.
+matches the NBA dataset, so one reader serves both.
 
 | Index | Field | Description |
 |---|---|---|
@@ -89,10 +89,10 @@ attempts are identified by scoring value rather than distance. Where coordinates
 classification falls back to the play-type description.
 
 Slots 10 and 11 are zero because neither source feed carries a fastbreak qualifier. They are
-retained for index compatibility with the NBA corpus.
+retained for index compatibility with the NBA dataset.
 
 Slot 8 is the authoritative turnover count. Slots 13 to 15 partition it; unclassified turnovers
-are assigned to `tov_handle`, matching the NBA corpus.
+are assigned to `tov_handle`, matching the NBA dataset.
 
 Offensive rebounds exclude team and deadball rebounds. Free-throw attempts count every shot taken,
 made or missed. Assisted points are credited to the scoring team.

@@ -1,7 +1,7 @@
-# METRICS.md — LUMA WNBA Stint and ARC Corpus — Metric Boards
+# METRICS.md — LUMA WNBA Stint and Lineup Data — Metric Boards
 
 **Schema version:** `luma_metrics_v1` · **Rating version:** ARC v2
-Companion to [SCHEMA.md](SCHEMA.md), which documents the stint corpus these are computed from.
+Companion to [SCHEMA.md](SCHEMA.md), which documents the stint data these are computed from.
 
 All files key on `LUMA-W-#######` identifiers. See `crosswalk.csv` for the mapping to
 WNBA Stats and ESPN identifiers.
@@ -55,7 +55,7 @@ Units are points per 100 possessions relative to a league-average player. The ad
 
 ### Estimation
 
-ARC v2. Ridge regression on the stint corpus, alpha 3000, with a Box+ prior weighted 0.25.
+ARC v2. Ridge regression on the stint data, alpha 3000, with a Box+ prior weighted 0.25.
 Regular-season boards weight the on/off and Box+ components 0.80/0.20. The playoff board inverts
 toward the Box+ side, since a postseason contains too few possessions for a regularised on/off
 estimate to stand alone.

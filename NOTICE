@@ -1,4 +1,4 @@
-LUMA WNBA Stint and ARC Corpus — licensing
+LUMA WNBA Stint and Lineup Data — licensing
 =========================================
 
 Two licences apply to this repository.
@@ -17,15 +17,15 @@ Two licences apply to this repository.
 
 Attribution
 -----------
-When using the data, cite the corpus rather than this file. CITATION.cff
+When using the data, cite the dataset rather than this file. CITATION.cff
 carries machine-readable citation metadata; GitHub renders it as "Cite this
 repository" in the sidebar.
 
-  Awoyemi, A. (2026). LUMA WNBA Stint and ARC Corpus (Version 1.0.0) [Data set].
+  Awoyemi, A. (2026). LUMA WNBA Stint and Lineup Data (Version 1.0.0) [Data set].
 
 Upstream sources
 ----------------
-The corpus is derived from publicly accessible play-by-play and box-score
+The data is derived from publicly accessible play-by-play and box-score
 feeds. Those feeds carry their own terms, which are not superseded by the
 licences above. SOURCES.md documents each source, what was taken from it, and
 the basis on which it was used.

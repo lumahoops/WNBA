@@ -40,15 +40,15 @@ p = os.path.join(root, "README.md")
 r = open(p, encoding="utf-8").read()
 # citation block first: the badge also contains "doi.org", so inserting it
 # first would make a naive guard skip this edit.
-old_cite = ("Awoyemi, A. (2026). LUMA WNBA Stint and ARC Corpus (Version 1.0.0) [Data set].\n"
+old_cite = ("Awoyemi, A. (2026). LUMA WNBA Stint and Lineup Data (Version 1.0.0) [Data set].\n"
             "https://github.com/lumahoops/WNBA")
 if old_cite in r:
     r = r.replace(old_cite,
-                  "Awoyemi, A. (2026). LUMA WNBA Stint and ARC Corpus (Version 1.0.0) [Data set].\n"
+                  "Awoyemi, A. (2026). LUMA WNBA Stint and Lineup Data (Version 1.0.0) [Data set].\n"
                   "Zenodo. https://doi.org/%s" % doi, 1)
 badge = "[![DOI](https://zenodo.org/badge/DOI/%s.svg)](https://doi.org/%s)" % (doi, doi)
 if "zenodo.org/badge" not in r:
-    r = r.replace("# LUMA WNBA Stint and ARC Corpus\n", "# LUMA WNBA Stint and ARC Corpus\n\n%s\n" % badge, 1)
+    r = r.replace("# LUMA WNBA Stint and Lineup Data\n", "# LUMA WNBA Stint and Lineup Data\n\n%s\n" % badge, 1)
 open(p, "w", encoding="utf-8", newline="\n").write(r)
 
 try:
