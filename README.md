@@ -119,7 +119,7 @@ category.
 
 ## Licence and citation
 
-Data under `data/` is [CC BY 4.0](LICENSE); code is [MIT](LICENSE-CODE). Sources are documented in
+Data under `data/` is [CC BY 4.0](LICENSE); code is [MIT](CODE-LICENSE.txt). Sources are documented in
 [SOURCES.md](SOURCES.md). Not affiliated with the WNBA or ESPN.
 
 ```
