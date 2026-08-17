@@ -2,7 +2,7 @@
  "league": "WNBA",
  "schema": "luma_metrics_v1",
  "rating": "arc_v2",
- "exported": "2026-08-17T03:56:04",
+ "exported": "2026-08-17T04:06:19",
  "files": {
   "arc/season_2003.json": {
    "rows": 170,
@@ -595,6 +595,450 @@
   "arc/playoffs_windows/2025_2025.json": {
    "rows": 90,
    "sha256": "5c22081975f82be4"
+  },
+  "rapm/season_2003.json": {
+   "rows": 176,
+   "sha256": "4ecee278f16c125a"
+  },
+  "rapm/windows/2yr_2003_2004.json": {
+   "rows": 224,
+   "sha256": "27a53c9cde2c0093"
+  },
+  "rapm/windows/3yr_2003_2005.json": {
+   "rows": 264,
+   "sha256": "f1f6df46ad69c8d3"
+  },
+  "rapm/windows/4yr_2003_2006.json": {
+   "rows": 306,
+   "sha256": "3f6d4a3d15041898"
+  },
+  "rapm/windows/5yr_2003_2007.json": {
+   "rows": 341,
+   "sha256": "8746e7ac666d6786"
+  },
+  "rapm/alltime.json": {
+   "rows": 976,
+   "sha256": "f487bb2091513ce2"
+  },
+  "rapm/season_2004.json": {
+   "rows": 164,
+   "sha256": "f87f1ba0b1785cb8"
+  },
+  "rapm/windows/2yr_2004_2005.json": {
+   "rows": 213,
+   "sha256": "e142a2e9d62f9949"
+  },
+  "rapm/windows/3yr_2004_2006.json": {
+   "rows": 259,
+   "sha256": "e95470cc58fdee31"
+  },
+  "rapm/windows/4yr_2004_2007.json": {
+   "rows": 295,
+   "sha256": "c41cff1462d47129"
+  },
+  "rapm/windows/5yr_2004_2008.json": {
+   "rows": 345,
+   "sha256": "d515effd916770cf"
+  },
+  "rapm/season_2005.json": {
+   "rows": 169,
+   "sha256": "6f8d16a6ed7b078f"
+  },
+  "rapm/windows/2yr_2005_2006.json": {
+   "rows": 225,
+   "sha256": "80f395e9a653b42f"
+  },
+  "rapm/windows/3yr_2005_2007.json": {
+   "rows": 261,
+   "sha256": "7156b2d9c062aac0"
+  },
+  "rapm/windows/4yr_2005_2008.json": {
+   "rows": 311,
+   "sha256": "ba04c8380ce80a2a"
+  },
+  "rapm/windows/5yr_2005_2009.json": {
+   "rows": 337,
+   "sha256": "e08ef8d2deef0dd4"
+  },
+  "rapm/season_2006.json": {
+   "rows": 182,
+   "sha256": "34cd8d26cb0d823b"
+  },
+  "rapm/windows/2yr_2006_2007.json": {
+   "rows": 220,
+   "sha256": "53c9726f833a9368"
+  },
+  "rapm/windows/3yr_2006_2008.json": {
+   "rows": 272,
+   "sha256": "64c91daa2963b263"
+  },
+  "rapm/windows/4yr_2006_2009.json": {
+   "rows": 300,
+   "sha256": "6423927e39f7e01d"
+  },
+  "rapm/windows/5yr_2006_2010.json": {
+   "rows": 326,
+   "sha256": "299d086cbf14ea1e"
+  },
+  "rapm/season_2007.json": {
+   "rows": 172,
+   "sha256": "92a8466a6f9a819b"
+  },
+  "rapm/windows/2yr_2007_2008.json": {
+   "rows": 233,
+   "sha256": "b1c687335985de18"
+  },
+  "rapm/windows/3yr_2007_2009.json": {
+   "rows": 261,
+   "sha256": "0c17806325c6db4f"
+  },
+  "rapm/windows/4yr_2007_2010.json": {
+   "rows": 287,
+   "sha256": "5164d269ba50dc83"
+  },
+  "rapm/windows/5yr_2007_2011.json": {
+   "rows": 314,
+   "sha256": "4518221085acf3c3"
+  },
+  "rapm/season_2008.json": {
+   "rows": 192,
+   "sha256": "e4cfb49ec093f69d"
+  },
+  "rapm/windows/2yr_2008_2009.json": {
+   "rows": 225,
+   "sha256": "e8b336751b68f538"
+  },
+  "rapm/windows/3yr_2008_2010.json": {
+   "rows": 253,
+   "sha256": "379160a497fd6341"
+  },
+  "rapm/windows/4yr_2008_2011.json": {
+   "rows": 280,
+   "sha256": "31c7c986605de5f7"
+  },
+  "rapm/windows/5yr_2008_2012.json": {
+   "rows": 306,
+   "sha256": "04ece3ec961e9f66"
+  },
+  "rapm/season_2009.json": {
+   "rows": 161,
+   "sha256": "89ec48026dee6f48"
+  },
+  "rapm/windows/2yr_2009_2010.json": {
+   "rows": 193,
+   "sha256": "8b7052994882ba4d"
+  },
+  "rapm/windows/3yr_2009_2011.json": {
+   "rows": 222,
+   "sha256": "305b5bbbee00ec5d"
+  },
+  "rapm/windows/4yr_2009_2012.json": {
+   "rows": 249,
+   "sha256": "4b4af43f371c9119"
+  },
+  "rapm/windows/5yr_2009_2013.json": {
+   "rows": 282,
+   "sha256": "338cd6ad9fe1e67f"
+  },
+  "rapm/season_2010.json": {
+   "rows": 144,
+   "sha256": "9777959de1d74dc3"
+  },
+  "rapm/windows/2yr_2010_2011.json": {
+   "rows": 180,
+   "sha256": "9eab551ef3db051a"
+  },
+  "rapm/windows/3yr_2010_2012.json": {
+   "rows": 210,
+   "sha256": "88f0ecc8530a1025"
+  },
+  "rapm/windows/4yr_2010_2013.json": {
+   "rows": 243,
+   "sha256": "dd8b60104f1af1fe"
+  },
+  "rapm/windows/5yr_2010_2014.json": {
+   "rows": 275,
+   "sha256": "7e9a500b5f73f8aa"
+  },
+  "rapm/season_2011.json": {
+   "rows": 142,
+   "sha256": "a7be85dd07481a2f"
+  },
+  "rapm/windows/2yr_2011_2012.json": {
+   "rows": 178,
+   "sha256": "1ed065b5a3330223"
+  },
+  "rapm/windows/3yr_2011_2013.json": {
+   "rows": 213,
+   "sha256": "33c9dfd1f1aff52a"
+  },
+  "rapm/windows/4yr_2011_2014.json": {
+   "rows": 248,
+   "sha256": "ffbf1f781630c911"
+  },
+  "rapm/windows/5yr_2011_2015.json": {
+   "rows": 288,
+   "sha256": "ea9cae8d7a971d26"
+  },
+  "rapm/season_2012.json": {
+   "rows": 146,
+   "sha256": "b5d9f95e30b64470"
+  },
+  "rapm/windows/2yr_2012_2013.json": {
+   "rows": 187,
+   "sha256": "3a07243f5b1c6b69"
+  },
+  "rapm/windows/3yr_2012_2014.json": {
+   "rows": 222,
+   "sha256": "5867934fa948acf6"
+  },
+  "rapm/windows/4yr_2012_2015.json": {
+   "rows": 264,
+   "sha256": "3bb24dcd7e681200"
+  },
+  "rapm/windows/5yr_2012_2016.json": {
+   "rows": 293,
+   "sha256": "dd4ec618fb853cd7"
+  },
+  "rapm/season_2013.json": {
+   "rows": 146,
+   "sha256": "9480bccea810f008"
+  },
+  "rapm/windows/2yr_2013_2014.json": {
+   "rows": 186,
+   "sha256": "455ef2de658d94d8"
+  },
+  "rapm/windows/3yr_2013_2015.json": {
+   "rows": 229,
+   "sha256": "4636f1c90001d604"
+  },
+  "rapm/windows/4yr_2013_2016.json": {
+   "rows": 260,
+   "sha256": "5d208f17afb51a8e"
+  },
+  "rapm/windows/5yr_2013_2017.json": {
+   "rows": 292,
+   "sha256": "b8a7641a4c393aaa"
+  },
+  "rapm/season_2014.json": {
+   "rows": 154,
+   "sha256": "b94832e813e47d92"
+  },
+  "rapm/windows/2yr_2014_2015.json": {
+   "rows": 202,
+   "sha256": "1ece620fcfd3df88"
+  },
+  "rapm/windows/3yr_2014_2016.json": {
+   "rows": 233,
+   "sha256": "dfe532f08d63ad73"
+  },
+  "rapm/windows/4yr_2014_2017.json": {
+   "rows": 267,
+   "sha256": "a245b8a144507767"
+  },
+  "rapm/windows/5yr_2014_2018.json": {
+   "rows": 296,
+   "sha256": "dcf6a9c655a0c0cd"
+  },
+  "rapm/season_2015.json": {
+   "rows": 159,
+   "sha256": "3e5481f3e43de8da"
+  },
+  "rapm/windows/2yr_2015_2016.json": {
+   "rows": 201,
+   "sha256": "1de82b944321fb0c"
+  },
+  "rapm/windows/3yr_2015_2017.json": {
+   "rows": 239,
+   "sha256": "42ba3a7979a4640d"
+  },
+  "rapm/windows/4yr_2015_2018.json": {
+   "rows": 268,
+   "sha256": "4a0534964f22e51d"
+  },
+  "rapm/windows/5yr_2015_2019.json": {
+   "rows": 299,
+   "sha256": "9091b06c5a021b49"
+  },
+  "rapm/season_2016.json": {
+   "rows": 157,
+   "sha256": "a9e8247bddd8049c"
+  },
+  "rapm/windows/2yr_2016_2017.json": {
+   "rows": 205,
+   "sha256": "3460dc3bf5010706"
+  },
+  "rapm/windows/3yr_2016_2018.json": {
+   "rows": 234,
+   "sha256": "7cb04706557cef2f"
+  },
+  "rapm/windows/4yr_2016_2019.json": {
+   "rows": 266,
+   "sha256": "d6f8c68a976b13ef"
+  },
+  "rapm/windows/5yr_2016_2020.json": {
+   "rows": 296,
+   "sha256": "95bc777f297ff2f1"
+  },
+  "rapm/season_2017.json": {
+   "rows": 157,
+   "sha256": "f3b7d84078f91496"
+  },
+  "rapm/windows/2yr_2017_2018.json": {
+   "rows": 199,
+   "sha256": "c3e1be0391ce3fb6"
+  },
+  "rapm/windows/3yr_2017_2019.json": {
+   "rows": 234,
+   "sha256": "11345d50937293cb"
+  },
+  "rapm/windows/4yr_2017_2020.json": {
+   "rows": 264,
+   "sha256": "d3d0b3786130b3fd"
+  },
+  "rapm/windows/5yr_2017_2021.json": {
+   "rows": 287,
+   "sha256": "afedb7780a54e6fe"
+  },
+  "rapm/season_2018.json": {
+   "rows": 157,
+   "sha256": "3a23c8c1a44a21a5"
+  },
+  "rapm/windows/2yr_2018_2019.json": {
+   "rows": 198,
+   "sha256": "50ed309d93af19d4"
+  },
+  "rapm/windows/3yr_2018_2020.json": {
+   "rows": 230,
+   "sha256": "41b1b42bb77a9b68"
+  },
+  "rapm/windows/4yr_2018_2021.json": {
+   "rows": 253,
+   "sha256": "9add363d644ec983"
+  },
+  "rapm/windows/5yr_2018_2022.json": {
+   "rows": 291,
+   "sha256": "ed7d5e2e11f2a820"
+  },
+  "rapm/season_2019.json": {
+   "rows": 156,
+   "sha256": "1adbceeed0873bc5"
+  },
+  "rapm/windows/2yr_2019_2020.json": {
+   "rows": 198,
+   "sha256": "417aa8a76af1f021"
+  },
+  "rapm/windows/3yr_2019_2021.json": {
+   "rows": 222,
+   "sha256": "0448271e542c2707"
+  },
+  "rapm/windows/4yr_2019_2022.json": {
+   "rows": 260,
+   "sha256": "8c75bb09e7b0dc4c"
+  },
+  "rapm/windows/5yr_2019_2023.json": {
+   "rows": 290,
+   "sha256": "2c5bbf913e86eb2a"
+  },
+  "rapm/season_2020.json": {
+   "rows": 145,
+   "sha256": "9e81aa6d53959dbb"
+  },
+  "rapm/windows/2yr_2020_2021.json": {
+   "rows": 189,
+   "sha256": "c570785b128f7099"
+  },
+  "rapm/windows/3yr_2020_2022.json": {
+   "rows": 231,
+   "sha256": "afa9f508cc3e824b"
+  },
+  "rapm/windows/4yr_2020_2023.json": {
+   "rows": 261,
+   "sha256": "acecc1342e346dea"
+  },
+  "rapm/windows/5yr_2020_2024.json": {
+   "rows": 289,
+   "sha256": "64b024fd48f77a98"
+  },
+  "rapm/season_2021.json": {
+   "rows": 154,
+   "sha256": "783a370e675a4fba"
+  },
+  "rapm/windows/2yr_2021_2022.json": {
+   "rows": 206,
+   "sha256": "0ca842144799daba"
+  },
+  "rapm/windows/3yr_2021_2023.json": {
+   "rows": 237,
+   "sha256": "e82e50931874b815"
+  },
+  "rapm/windows/4yr_2021_2024.json": {
+   "rows": 265,
+   "sha256": "efb2a5707b2ca3d2"
+  },
+  "rapm/windows/5yr_2021_2025.json": {
+   "rows": 313,
+   "sha256": "1feb238296ea543c"
+  },
+  "rapm/season_2022.json": {
+   "rows": 166,
+   "sha256": "55b9b2eb30eff9b0"
+  },
+  "rapm/windows/2yr_2022_2023.json": {
+   "rows": 205,
+   "sha256": "11fd7dd66c92da7e"
+  },
+  "rapm/windows/3yr_2022_2024.json": {
+   "rows": 237,
+   "sha256": "ed88cdb07c8a8963"
+  },
+  "rapm/windows/4yr_2022_2025.json": {
+   "rows": 286,
+   "sha256": "f6771cce7795bb8d"
+  },
+  "rapm/windows/5yr_2022_2026.json": {
+   "rows": 361,
+   "sha256": "4ac8cdb6199a6f9e"
+  },
+  "rapm/season_2023.json": {
+   "rows": 155,
+   "sha256": "3d36a52d8c25d00a"
+  },
+  "rapm/windows/2yr_2023_2024.json": {
+   "rows": 201,
+   "sha256": "2d6d4b41cc8a07a9"
+  },
+  "rapm/windows/3yr_2023_2025.json": {
+   "rows": 255,
+   "sha256": "c1f3c6005e5f62bb"
+  },
+  "rapm/windows/4yr_2023_2026.json": {
+   "rows": 331,
+   "sha256": "2558a746472bdead"
+  },
+  "rapm/season_2024.json": {
+   "rows": 157,
+   "sha256": "78e67242d9d9efdd"
+  },
+  "rapm/windows/2yr_2024_2025.json": {
+   "rows": 218,
+   "sha256": "7320b07a67940c09"
+  },
+  "rapm/windows/3yr_2024_2026.json": {
+   "rows": 297,
+   "sha256": "35c4029e414587c4"
+  },
+  "rapm/season_2025.json": {
+   "rows": 181,
+   "sha256": "76674ff759f4a690"
+  },
+  "rapm/windows/2yr_2025_2026.json": {
+   "rows": 265,
+   "sha256": "3fe81d87e47c8f8a"
+  },
+  "rapm/season_2026.json": {
+   "rows": 230,
+   "sha256": "2312567b27c23d63"
   },
   "od/2003.json": {
    "rows": 176,

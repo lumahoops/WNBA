@@ -18,6 +18,9 @@ data/metrics/
   arc/windows/{n}yr_{y0}_{y1}.json    84 multi-year boards, 2 to 5-season spans
   arc/decay/{y0}_{y1}_asof{d}_hl{h}.json  26 time-decayed boards
   arc/playoffs_windows/{y0}_{y1}.json 12 postseason boards by span
+  rapm/season_{2003..2026}.json       pure RAPM, no box prior, 24 seasons
+  rapm/windows/{n}yr_{y0}_{y1}.json   86 multi-year pure-RAPM boards
+  rapm/alltime.json                   pure RAPM, 2003-2026
   od/{2003..2026}.json                offence/defence split, 24 seasons
   od/windows/{n}yr_{y0}_{y1}.json     85 multi-year splits
   od/playoffs/                        12 postseason splits
@@ -28,7 +31,27 @@ data/metrics/
   manifest.json                       SHA-256 per file, row counts, export timestamp
 ```
 
-365 files.
+476 files.
+
+## 2b. Pure RAPM
+
+`rapm/` holds the ridge solve with no box-score prior. ARC's `impact` term folds a box-BPM prior
+in at weight 0.25; setting that weight to zero leaves the estimate the stint data alone supports.
+
+```json
+{"luma_id": "LUMA-W-0000059", "rapm": 3.99, "poss": 2109.0}
+```
+
+| Field | Meaning |
+|---|---|
+| `rapm` | Ridge-regularised plus-minus, points per 100 possessions, alpha 3000 |
+| `poss` | Possessions the player was on court for, the weight behind the estimate |
+
+Board metadata records `alpha`, the seasons pooled, and `prior: null`.
+
+Pure RAPM correlates 0.917 with ARC's `impact` on the 2026 board and carries a smaller spread
+(SD 1.21 against 1.54), which is the prior's contribution removed. Use `rapm/` where a
+prior-free estimate is wanted; use `arc/` where the box component is wanted.
 
 ### Windows
 

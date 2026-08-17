@@ -27,7 +27,7 @@ Site: https://court-share.com/luma
 | Games | 5,623 |
 | Stints | 267,293 |
 | Players | 975 |
-| Size | 429 files, 95 MB |
+| Size | 542 files, 96.7 MB |
 | Schema | `luma_stints_v2` |
 
 Version 1.0.0, current through 2026-08-15.
@@ -42,6 +42,7 @@ data/quality.json                     per-season diagnostics
 data/manifest.json                    SHA-256 per file
 data/metrics/arc/                     ratings, per season and career
 data/metrics/arc/windows/             multi-year boards, 2 to 5-season spans
+data/metrics/rapm/                    pure RAPM, no box prior, all spans
 data/metrics/arc/decay/               time-decayed boards, 45-day half-life
 data/metrics/od/                      offence and defence components, incl. windows
 data/metrics/channels/                on/off decomposition, shot profile, Box+ inputs
