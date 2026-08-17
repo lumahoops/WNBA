@@ -5,9 +5,7 @@
 LUMA is an open-source project measuring basketball player impact. This repository holds WNBA
 lineup-stint data and the ratings derived from it.
 
-Stints are intervals during which both teams' five-player lineups remain unchanged, reconstructed
-here from play-by-play substitution events. They are the input to on/off and regularised
-plus-minus estimation.
+
 
 ## Contents
 
