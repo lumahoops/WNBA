@@ -10,3 +10,4 @@ _wnba_arc_board_v3_*.json
 build/
 dist/
 *.egg-info/
+_m.txt
