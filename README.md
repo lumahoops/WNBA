@@ -92,7 +92,8 @@ Click the badge. Nothing to download, no GitHub account, no clone.
 ### Python
 
 ```bash
-pip install luma-wnba
+pip install luma-wnba          # once released on PyPI
+pip install https://github.com/lumahoops/WNBA/archive/refs/heads/main.tar.gz   # works today
 ```
 
 ```python
