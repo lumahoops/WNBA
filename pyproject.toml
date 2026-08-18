@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luma-wnba"
+version = "1.0.0"
+description = "WNBA lineup-stint data and player impact ratings (2003-2026)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "CC-BY-4.0"
+license-files = ["LICENSE", "CODE-LICENSE.txt", "NOTICE"]
+keywords = [
+    "wnba", "basketball", "stints", "lineups", "rapm", "plus-minus",
+    "sports analytics", "play-by-play", "open data", "player impact",
+]
+authors = [{ name = "LUMA" }]
+maintainers = [{ name = "LUMA" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.3"]
+
+[project.urls]
+Homepage = "https://court-share.com/luma"
+Repository = "https://github.com/lumahoops/WNBA"
+Dataset = "https://doi.org/10.5281/zenodo.21972004"
+
+[project.scripts]
+luma-wnba = "luma_wnba.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

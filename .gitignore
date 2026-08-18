@@ -5,3 +5,8 @@ __pycache__/
 # stale ARC v3 boards, kept locally for reference
 *_v3_*.json
 _wnba_arc_board_v3_*.json
+
+# packaging
+build/
+dist/
+*.egg-info/

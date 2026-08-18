@@ -46,7 +46,8 @@ data/metrics/rapm/                    pure RAPM, no box prior, all spans
 data/metrics/arc/decay/               time-decayed boards, 45-day half-life
 data/metrics/od/                      offence and defence components, incl. windows
 data/metrics/channels/                on/off decomposition, shot profile, Box+ inputs
-loaders/python/luma_wnba.py
+src/luma_wnba/           pip-installable loader
+notebooks/quickstart.ipynb
 sample/
 ```
 
@@ -82,15 +83,57 @@ Positions denote venue, not franchise.
 
 ## Usage
 
-```python
-from luma_wnba import load_stints, load_crosswalk, player_seconds
+### No install — run it in the browser
 
-games = load_stints(2026)               # regular season
-games = load_stints(2024, kind="po")    # postseason
-seconds = player_seconds(games)         # {luma_id: seconds on court}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lumahoops/WNBA/blob/main/notebooks/quickstart.ipynb)
+
+Click the badge. Nothing to download, no GitHub account, no clone.
+
+### Python
+
+```bash
+pip install luma-wnba
 ```
 
-Standard library only. `sample/` holds five games and a twenty-row rating board.
+```python
+import luma_wnba as luma
+
+games   = luma.load_stints(2026)          # regular season, fetched and cached
+games   = luma.load_stints(2024, kind="po")
+seconds = luma.player_seconds(games)      # {luma_id: seconds on court}
+names   = luma.load_crosswalk()           # {luma_id: identity row}
+arc     = luma.load_arc(2026)             # rating board
+```
+
+Data is fetched over the network on first use and cached under `~/.cache/luma-wnba`, so no
+clone is required. Standard library only — no pandas, no requests. If you have cloned the
+repository, local files are used automatically.
+
+Pin a tag for reproducibility:
+
+```python
+games = luma.load_stints(2026, ref="v1.0.0")
+```
+
+### Terminal
+
+```bash
+luma-wnba top 2026            # minutes leaders
+luma-wnba fetch 2025 --kind po
+luma-wnba seasons
+luma-wnba cache --clear
+```
+
+### R
+
+No R package; the files are plain JSON.
+
+```r
+library(jsonlite)
+games <- fromJSON("https://raw.githubusercontent.com/lumahoops/WNBA/main/data/stints/rs_2026.json")
+```
+
+`sample/` holds five games and a twenty-row rating board.
 
 Possessions, following Oliver:
 
