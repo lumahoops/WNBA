@@ -1,0 +1,136 @@
+# LUMA WNBA
+
+> Open dataset of WNBA lineup stints, 2003-2026: 267,293 stints, 5,623 games, 975 players.
+> Published under CC BY 4.0 with DOI 10.5281/zenodo.21972004. Installable Python package,
+> standard library only, no API key.
+
+*Paste this file into an assistant, or point it at this URL, then ask your question.*
+
+## What this is
+
+LUMA WNBA is an open dataset of WNBA lineup stints covering 2003 to 2026: 267,293 stints across
+5,623 games and 975 players. It is published at https://github.com/lumahoops/WNBA under CC BY 4.0
+with DOI 10.5281/zenodo.21972004. It ships a standard-library-only Python package, `luma-wnba`.
+
+## Install
+
+```bash
+pip install luma-wnba
+# or, works today without PyPI:
+pip install https://github.com/lumahoops/WNBA/archive/refs/heads/main.tar.gz
+```
+
+## The complete API
+
+Every public function is listed below. There are no others. Do not invent function names.
+
+```python
+load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
+load_crosswalk(source='auto', data_dir=None, ref='main')
+load_metric(name, source='auto', data_dir=None, ref='main')
+seasons(kind='rs')
+iter_stints(games)
+player_seconds(games)
+tally_dict(tally)
+seconds_to_minutes(secs)
+load_arc(season=None, source='auto', data_dir=None, ref='main')
+load_rapm(season=None, source='auto', data_dir=None, ref='main')
+load_od(season, source='auto', data_dir=None, ref='main')
+load_quality(source='auto', data_dir=None, ref='main')
+cache_dir(ref='main')
+clear_cache()
+
+TALLY = ('fga_rim','pts_rim','fga_mid','pts_mid','fga_3','pts_3','fta','pts_ft',
+         'tov','oreb','fb_att','fb_pts','ast_pts','tov_pass','tov_handle','tov_sys')
+RS_SEASONS = 2003..2026
+PO_SEASONS = 2003..2025
+__version__ = '1.0.0'
+```
+
+## Data shapes
+
+`load_stints(season)` returns a dict keyed by game id string:
+
+```python
+{"1022600001": {"date": "2026-05-08", "stints": [ ... ]}}
+```
+
+`date` is a `"YYYY-MM-DD"` string or `None`. Each stint is a 7-element list:
+
+```python
+[home_five, away_five, seconds, home_points, away_points, home_tally, away_tally]
+```
+
+- `home_five` and `away_five` are lists of exactly 5 player id strings.
+- `seconds` is a float.
+- `home_tally` and `away_tally` are 16-element integer lists.
+
+The 16 tally slots are in the order of the `TALLY` constant. Use `tally_dict(tally)` to turn one
+into a named dict. A tally counts that team's own offensive events during the stint.
+
+Player ids look like `LUMA-W-0000123`. They are stable and never reused.
+
+`load_crosswalk()` returns `{player_id: row}` where `row` includes `display_name` and source ids.
+Always look names up defensively, because a player may be absent:
+
+```python
+names.get(pid, {}).get("display_name", pid)
+```
+
+Positions in a stint denote **venue** (home or away), not franchise. A stint record contains no
+team identifier.
+
+## Rules you must follow
+
+1. Never invent function names. The API list above is complete.
+2. Data is fetched over the network on first use and cached in `~/.cache/luma-wnba`. No clone is
+   needed and no API key exists.
+3. For reproducible analysis, pass `ref="v1.0.0"` to pin a version.
+4. Possessions follow Oliver's formula, where `t` is a tally:
+   `poss = t[0] + t[2] + t[4] + 0.44 * t[6] + t[8] - t[9]`
+5. Skip stints where `seconds <= 0`. A small number exist. `player_seconds()` already does this.
+6. Regular season and postseason never share a game id, so summing across `kind="rs"` and
+   `kind="po"` is safe.
+7. Prefer `seasons()` over hard-coding years, so code keeps working as seasons are added.
+
+## Worked example
+
+```python
+import luma_wnba as luma
+
+SEASON = max(luma.seasons("rs"))
+games  = luma.load_stints(SEASON)
+names  = luma.load_crosswalk()
+secs   = luma.player_seconds(games)
+
+for rank, (pid, s) in enumerate(sorted(secs.items(), key=lambda kv: -kv[1])[:10], 1):
+    who = names.get(pid, {}).get("display_name", pid)
+    print("%2d. %-24s %6.1f min" % (rank, who, s / 60))
+```
+
+## Metric boards
+
+`load_arc(season)` and `load_rapm(season)` return a dict with keys `years`, `asof`, `halflife`,
+`datacut`, `n`, `players`.
+
+- **ARC** is a ridge-regularised on/off estimate combined with a box component, expressed in
+  points per 100 possessions relative to league average.
+- **RAPM** is the pure on/off estimate with no box prior.
+- `load_od(season)` gives offence and defence splits.
+- Pass `season=None` to `load_arc` or `load_rapm` for the all-time board.
+
+## Good questions to ask
+
+- Which lineups outscored their opponents most per 100 possessions in the latest season?
+- Compare a player's ARC to their RAPM across seasons and explain where they diverge.
+- Which players have the highest share of their points from the rim, by season?
+- Build a possession-weighted efficiency table for every team-venue in a season.
+- Show how a player's minutes and on-court margin moved across their career.
+
+## Citation
+
+```
+LUMA. LUMA WNBA Stint and Lineup Data. https://doi.org/10.5281/zenodo.21972004
+```
+
+CC BY 4.0 requires attribution when you publish results derived from this data.

@@ -47,6 +47,8 @@ data/metrics/arc/decay/               time-decayed boards, 45-day half-life
 data/metrics/od/                      offence and defence components, incl. windows
 data/metrics/channels/                on/off decomposition, shot profile, Box+ inputs
 src/luma_wnba/           pip-installable loader
+llms.txt                 briefing for AI assistants
+AGENTS.md                conventions for coding agents
 notebooks/quickstart.ipynb
 sample/
 ```
@@ -127,14 +129,14 @@ luma-wnba cache --clear
 
 ### With ChatGPT or any AI agent
 
-[`AGENTS.md`](AGENTS.md) is a briefing you can paste into an assistant so it writes correct code
+[`llms.txt`](llms.txt) is a briefing you can paste into an assistant so it writes correct code
 against this dataset instead of guessing. It lists the complete API, the record shapes and the
 rules that matter.
 
 Either paste the file, or give the assistant the URL:
 
 ```
-Read https://raw.githubusercontent.com/lumahoops/WNBA/main/AGENTS.md and use it to answer
+Read https://raw.githubusercontent.com/lumahoops/WNBA/main/llms.txt and use it to answer
 questions about WNBA lineup data.
 ```
 
