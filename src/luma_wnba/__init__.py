@@ -181,6 +181,14 @@ def seconds_to_minutes(secs):
     return round(secs / 60.0, 1)
 
 
+# MAINTENANCE
+# __all__ below is the documented public surface. It is read by
+# scripts/sync_docs.py, which regenerates the API listing in llms.txt,
+# README.md and AGENTS.md. If you add, remove or rename anything here, run
+#     python scripts/sync_docs.py
+# CI (.github/workflows/verify.yml, job docs-in-sync) fails the build if the
+# docs do not match this module.
+
 __all__ = [
     "load_stints", "load_crosswalk", "load_metric", "seasons",
     "iter_stints", "player_seconds", "tally_dict", "seconds_to_minutes",

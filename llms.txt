@@ -26,6 +26,13 @@ Every public function is listed below. There are no others. Do not invent functi
 This section is generated from the code by `scripts/sync_docs.py` and verified in CI,
 so it cannot fall out of date.
 
+<!--
+  MAINTENANCE NOTE
+  The block below is GENERATED from the code by scripts/sync_docs.py.
+  Do not edit it by hand: your edit will be overwritten, and CI
+  (.github/workflows/verify.yml, job docs-in-sync) will fail the build.
+  To update it after changing the API:  python scripts/sync_docs.py
+-->
 <!-- BEGIN GENERATED: api -->
 ```python
 load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
@@ -53,6 +60,13 @@ __version__ = '1.0.0'
 
 ## Coverage
 
+<!--
+  MAINTENANCE NOTE
+  The block below is GENERATED from the code by scripts/sync_docs.py.
+  Do not edit it by hand: your edit will be overwritten, and CI
+  (.github/workflows/verify.yml, job docs-in-sync) will fail the build.
+  To update it after changing the API:  python scripts/sync_docs.py
+-->
 <!-- BEGIN GENERATED: coverage -->
 | | |
 |---|---|

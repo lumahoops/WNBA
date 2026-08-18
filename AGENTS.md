@@ -58,6 +58,13 @@ The notebook (`notebooks/quickstart.ipynb`) must be executed with `nbclient` in 
 
 This block is written by `scripts/sync_docs.py`. Do not edit it by hand.
 
+<!--
+  MAINTENANCE NOTE
+  The block below is GENERATED from the code by scripts/sync_docs.py.
+  Do not edit it by hand: your edit will be overwritten, and CI
+  (.github/workflows/verify.yml, job docs-in-sync) will fail the build.
+  To update it after changing the API:  python scripts/sync_docs.py
+-->
 <!-- BEGIN GENERATED: api -->
 ```python
 load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
@@ -106,6 +113,36 @@ Generated blocks are delimited and must not be edited manually:
 Anything outside those markers is prose you maintain yourself. If you change a
 function name or signature, the only manual edits needed are the surrounding
 explanation and, if the behaviour changed, `notebooks/quickstart.ipynb`.
+
+## Maintenance: what is automatic and what is not
+
+Nothing in the list below needs to be remembered. CI enforces it on every push
+to main and on every pull request (`.github/workflows/verify.yml`).
+
+**Automatic — never edit these by hand**
+
+| what | where it comes from | enforced by |
+|---|---|---|
+| Public API listing | `inspect.signature` on `luma_wnba.__all__` | job `docs-in-sync` |
+| Season ranges | filenames under `data/stints/`, empty files ignored | job `docs-in-sync` |
+| Corpus counts | games, stints and players counted from the data | job `docs-in-sync` |
+| Package builds and metadata | `python -m build` plus `twine check` | job `package` |
+| Loader reads the corpus | `load_stints` against `data/` | job `package` |
+| CLI works | `luma-wnba seasons` | job `package` |
+| Notebook runs from scratch | nbclient, `luma_wnba` absent | job `notebook` |
+
+If a generated block drifts, CI fails with the exact fix:
+`python scripts/sync_docs.py`.
+
+**Still manual — a human or agent must do these**
+
+1. Prose outside the generated markers: explanations, examples, guidance.
+2. `notebooks/quickstart.ipynb` when behaviour changes. The notebook is executed
+   by CI, so a break is caught, but the wording is not written for you.
+3. `SCHEMA.md` and `METRICS.md` when the data layout or a metric definition
+   changes. These describe the corpus, not the code, so they cannot be derived.
+4. `CITATION.cff` and the Zenodo release when publishing a new version.
+5. Publishing to PyPI (`python -m twine upload dist/*`), which needs credentials.
 
 ## Data invariants
 

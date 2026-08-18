@@ -120,6 +120,13 @@ games = luma.load_stints(2026, ref="v1.0.0")
 
 ### Full API
 
+<!--
+  MAINTENANCE NOTE
+  The block below is GENERATED from the code by scripts/sync_docs.py.
+  Do not edit it by hand: your edit will be overwritten, and CI
+  (.github/workflows/verify.yml, job docs-in-sync) will fail the build.
+  To update it after changing the API:  python scripts/sync_docs.py
+-->
 <!-- BEGIN GENERATED: api -->
 ```python
 load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
