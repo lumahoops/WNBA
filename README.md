@@ -125,6 +125,19 @@ luma-wnba seasons
 luma-wnba cache --clear
 ```
 
+### With ChatGPT or any AI agent
+
+[`AGENTS.md`](AGENTS.md) is a briefing you can paste into an assistant so it writes correct code
+against this dataset instead of guessing. It lists the complete API, the record shapes and the
+rules that matter.
+
+Either paste the file, or give the assistant the URL:
+
+```
+Read https://raw.githubusercontent.com/lumahoops/WNBA/main/AGENTS.md and use it to answer
+questions about WNBA lineup data.
+```
+
 ### R
 
 No R package; the files are plain JSON.
