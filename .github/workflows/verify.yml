@@ -64,3 +64,39 @@ jobs:
           print("errors:", len(bad))
           sys.exit(1 if bad else 0)
           PY
+
+  harness:
+    # Runs every contributed metric against the holdout season and posts the
+    # leaderboard on the pull request. A submission that raises, returns the
+    # wrong shape, or reaches for the holdout fails here with a readable reason.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install declared dependencies
+        run: |
+          pip install -e .
+          for f in metrics/contrib/*/requirements.txt; do
+            [ -e "$f" ] && pip install -r "$f" || true
+          done
+      - name: Score every submission
+        run: |
+          python harness/run.py --all --holdout 2026 --json harness_results.json | tee harness_output.txt
+      - name: Comment on the pull request
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const out = fs.readFileSync('harness_output.txt', 'utf8');
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '### Harness results\n\n```\n' + out.slice(0, 60000) + '\n```'
+            });

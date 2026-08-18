@@ -1,0 +1,6 @@
+name: onoff_margin
+author: LUMA
+measures: overall impact
+description: possession-weighted on-court point margin per 100, regularised toward zero
+requires:
+license: CC-BY-4.0

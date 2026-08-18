@@ -11,3 +11,6 @@ build/
 dist/
 *.egg-info/
 _m.txt
+_res.json
+harness_results.json
+harness_output.txt

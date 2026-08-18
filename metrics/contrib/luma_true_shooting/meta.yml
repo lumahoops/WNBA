@@ -1,0 +1,6 @@
+name: true_shooting
+author: LUMA
+measures: scoring efficiency
+description: team true shooting percentage while the player was on court
+requires:
+license: CC-BY-4.0
