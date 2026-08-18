@@ -144,6 +144,29 @@ If a generated block drifts, CI fails with the exact fix:
 4. `CITATION.cff` and the Zenodo release when publishing a new version.
 5. Publishing to PyPI (`python -m twine upload dist/*`), which needs credentials.
 
+## Releasing
+
+Publishing uses Trusted Publishing (OIDC). No API token or password is stored
+in the repository or in GitHub secrets: PyPI verifies the workflow's identity
+directly. The publisher is registered at pypi.org under Publishing.
+
+To cut a release:
+
+```bash
+# 1. bump the version in pyproject.toml and src/luma_wnba/__init__.py
+# 2. python scripts/sync_docs.py
+# 3. commit, then tag
+git tag v1.0.1
+git push origin v1.0.1
+```
+
+The tag triggers `.github/workflows/publish.yml`, which builds, runs
+`twine check`, and publishes. The `pypi` environment gates the upload step, so
+it can require review before anything reaches PyPI.
+
+Version numbers live in two places and must match: `pyproject.toml` and
+`__version__` in `src/luma_wnba/__init__.py`.
+
 ## Data invariants
 
 - Regular season and postseason never share a game id.
