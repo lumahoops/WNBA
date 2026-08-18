@@ -118,6 +118,33 @@ Pin a tag for reproducibility:
 games = luma.load_stints(2026, ref="v1.0.0")
 ```
 
+### Full API
+
+<!-- BEGIN GENERATED: api -->
+```python
+load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
+load_crosswalk(source='auto', data_dir=None, ref='main')
+load_metric(name, source='auto', data_dir=None, ref='main')
+seasons(kind='rs')
+iter_stints(games)
+player_seconds(games)
+tally_dict(tally)
+seconds_to_minutes(secs)
+load_arc(season=None, source='auto', data_dir=None, ref='main')
+load_rapm(season=None, source='auto', data_dir=None, ref='main')
+load_od(season, source='auto', data_dir=None, ref='main')
+load_quality(source='auto', data_dir=None, ref='main')
+cache_dir(ref='main')
+clear_cache()
+
+TALLY = ('fga_rim', 'pts_rim', 'fga_mid', 'pts_mid', 'fga_3', 'pts_3', 'fta', 'pts_ft',
+         'tov', 'oreb', 'fb_att', 'fb_pts', 'ast_pts', 'tov_pass', 'tov_handle', 'tov_sys')
+RS_SEASONS = 2003..2026
+PO_SEASONS = 2003..2025
+__version__ = '1.0.0'
+```
+<!-- END GENERATED: api -->
+
 ### Terminal
 
 ```bash

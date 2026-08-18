@@ -1,0 +1,18 @@
+Generate API docs from code and verify in CI
+
+The public API appeared verbatim in llms.txt, README.md and AGENTS.md.
+Keeping three copies in step by hand guarantees they drift, and a stale
+agent briefing is worse than none because it teaches function names that
+do not exist.
+
+- scripts/sync_docs.py writes every derived block from the live module via
+  inspect.signature, and counts corpus coverage from the files on disk
+- blocks are delimited by BEGIN/END GENERATED markers so surrounding prose
+  is preserved
+- .github/workflows/verify.yml runs three jobs on every push: docs-in-sync,
+  package build plus twine check, and notebook execution in an environment
+  where luma_wnba is deliberately absent
+
+Verified by renaming a public function: --check exited 1 and named all three
+files. Also caught a real inconsistency, po_2026.json is an empty placeholder
+so postseason coverage now reads 2003-2025, matching PO_SEASONS.

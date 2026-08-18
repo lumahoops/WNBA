@@ -1,0 +1,66 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  docs-in-sync:
+    # The public API appears in llms.txt, README.md and AGENTS.md. This fails the
+    # build if any of them drifts from the code, so nothing has to be remembered.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check generated blocks
+        run: python scripts/sync_docs.py --check
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Loader reads the corpus
+        run: |
+          pip install -e .
+          python -c "import luma_wnba as l; g=l.load_stints(2026, source='local', data_dir='data'); print(len(g), 'games')"
+      - name: CLI runs
+        run: luma-wnba seasons
+      - name: Build and validate distribution
+        run: |
+          python -m pip install --quiet build twine
+          python -m build
+          python -m twine check dist/*
+
+  notebook:
+    # The install cell is part of what is being tested, so luma_wnba must be
+    # absent from the environment when the notebook starts.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Execute quickstart with no package installed
+        run: |
+          python -m pip install --quiet nbclient nbformat ipykernel
+          python - <<'PY'
+          import nbformat, sys
+          from nbclient import NotebookClient
+          nb = nbformat.read("notebooks/quickstart.ipynb", as_version=4)
+          NotebookClient(nb, timeout=600, kernel_name="python3",
+                         allow_errors=True).execute()
+          bad = [(i, o.ename, o.evalue)
+                 for i, c in enumerate(nb.cells) if c.cell_type == "code"
+                 for o in c.get("outputs", []) if o.output_type == "error"]
+          for i, name, val in bad:
+              print("FAIL cell %d: %s: %s" % (i, name, val))
+          print("errors:", len(bad))
+          sys.exit(1 if bad else 0)
+          PY

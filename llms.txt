@@ -23,7 +23,10 @@ pip install https://github.com/lumahoops/WNBA/archive/refs/heads/main.tar.gz
 ## The complete API
 
 Every public function is listed below. There are no others. Do not invent function names.
+This section is generated from the code by `scripts/sync_docs.py` and verified in CI,
+so it cannot fall out of date.
 
+<!-- BEGIN GENERATED: api -->
 ```python
 load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
 load_crosswalk(source='auto', data_dir=None, ref='main')
@@ -40,12 +43,26 @@ load_quality(source='auto', data_dir=None, ref='main')
 cache_dir(ref='main')
 clear_cache()
 
-TALLY = ('fga_rim','pts_rim','fga_mid','pts_mid','fga_3','pts_3','fta','pts_ft',
-         'tov','oreb','fb_att','fb_pts','ast_pts','tov_pass','tov_handle','tov_sys')
+TALLY = ('fga_rim', 'pts_rim', 'fga_mid', 'pts_mid', 'fga_3', 'pts_3', 'fta', 'pts_ft',
+         'tov', 'oreb', 'fb_att', 'fb_pts', 'ast_pts', 'tov_pass', 'tov_handle', 'tov_sys')
 RS_SEASONS = 2003..2026
 PO_SEASONS = 2003..2025
 __version__ = '1.0.0'
 ```
+<!-- END GENERATED: api -->
+
+## Coverage
+
+<!-- BEGIN GENERATED: coverage -->
+| | |
+|---|---|
+| Regular season | 2003-2026 |
+| Postseason | 2003-2025 |
+| Games | 5,623 |
+| Stints | 267,293 |
+| Players | 975 |
+
+<!-- END GENERATED: coverage -->
 
 ## Data shapes
 

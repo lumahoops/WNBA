@@ -29,6 +29,8 @@ There are no runtime dependencies and none should be added. All required modules
 
 ## Testing
 
+CI runs all of this on every push, see `.github/workflows/verify.yml`.
+
 ```bash
 # Verify loaded stints (use local data directory)
 python -c "import luma_wnba as l; g=l.load_stints(2026, source='local', data_dir='data'); print(len(g))"
@@ -52,13 +54,58 @@ The notebook (`notebooks/quickstart.ipynb`) must be executed with `nbclient` in 
 6. Notebook cells must keep trailing newlines in their source arrays, per `nbformat`. A cell written without them collapses into one line and silently breaks.
 7. Keep `loaders/python/luma_wnba.py` working. It is a deprecated shim that some existing scripts still import.
 
+## Public API (generated)
+
+This block is written by `scripts/sync_docs.py`. Do not edit it by hand.
+
+<!-- BEGIN GENERATED: api -->
+```python
+load_stints(season, kind='rs', source='auto', data_dir=None, ref='main')
+load_crosswalk(source='auto', data_dir=None, ref='main')
+load_metric(name, source='auto', data_dir=None, ref='main')
+seasons(kind='rs')
+iter_stints(games)
+player_seconds(games)
+tally_dict(tally)
+seconds_to_minutes(secs)
+load_arc(season=None, source='auto', data_dir=None, ref='main')
+load_rapm(season=None, source='auto', data_dir=None, ref='main')
+load_od(season, source='auto', data_dir=None, ref='main')
+load_quality(source='auto', data_dir=None, ref='main')
+cache_dir(ref='main')
+clear_cache()
+
+TALLY = ('fga_rim', 'pts_rim', 'fga_mid', 'pts_mid', 'fga_3', 'pts_3', 'fta', 'pts_ft',
+         'tov', 'oreb', 'fb_att', 'fb_pts', 'ast_pts', 'tov_pass', 'tov_handle', 'tov_sys')
+RS_SEASONS = 2003..2026
+PO_SEASONS = 2003..2025
+__version__ = '1.0.0'
+```
+<!-- END GENERATED: api -->
+
 ## When you change the API
 
-Any change to function names or signatures requires updating, in the same commit:
-- `src/luma_wnba/__init__.py`
-- `llms.txt`
-- `README.md` usage section
-- `notebooks/quickstart.ipynb`
+Do not update the docs by hand. Run:
+
+```bash
+python scripts/sync_docs.py
+```
+
+That rewrites every generated block from the live code. CI runs
+`python scripts/sync_docs.py --check` on each push and fails if anything drifted,
+so a stale doc cannot reach main.
+
+Generated blocks are delimited and must not be edited manually:
+
+| file | blocks |
+|---|---|
+| `llms.txt` | `api`, `coverage` |
+| `README.md` | `api` |
+| `AGENTS.md` | `api` |
+
+Anything outside those markers is prose you maintain yourself. If you change a
+function name or signature, the only manual edits needed are the surrounding
+explanation and, if the behaviour changed, `notebooks/quickstart.ipynb`.
 
 ## Data invariants
 
