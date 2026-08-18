@@ -148,7 +148,7 @@ TALLY = ('fga_rim', 'pts_rim', 'fga_mid', 'pts_mid', 'fga_3', 'pts_3', 'fta', 'p
          'tov', 'oreb', 'fb_att', 'fb_pts', 'ast_pts', 'tov_pass', 'tov_handle', 'tov_sys')
 RS_SEASONS = 2003..2026
 PO_SEASONS = 2003..2025
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 ```
 <!-- END GENERATED: api -->
 

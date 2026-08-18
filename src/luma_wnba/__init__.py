@@ -14,7 +14,7 @@ import shutil
 import urllib.request
 import urllib.error
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 DEFAULT_REF = "main"
 BASE_URL = "https://raw.githubusercontent.com/lumahoops/WNBA/{ref}/data"
 TALLY = (
