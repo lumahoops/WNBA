@@ -2,15 +2,15 @@
  "league": "WNBA",
  "schema": "luma_metrics_v1",
  "rating": "arc_v2",
- "exported": "2026-08-19T17:51:42",
+ "exported": "2026-08-19T18:49:30",
  "files": {
   "arc/season_2003.json": {
    "rows": 170,
    "sha256": "7d147e6e445cfdb3"
   },
   "arc/alltime.json": {
-   "rows": 970,
-   "sha256": "d14ce7689d24faab"
+   "rows": 965,
+   "sha256": "43612d7355d3e3ef"
   },
   "arc/season_2004.json": {
    "rows": 164,
@@ -101,8 +101,8 @@
    "sha256": "1f4918b84ffbc72a"
   },
   "arc/season_2026.json": {
-   "rows": 230,
-   "sha256": "7c222d9323d5b027"
+   "rows": 225,
+   "sha256": "ca50eca0f5a2f577"
   },
   "arc/windows/2yr_2003_2004.json": {
    "rows": 220,
@@ -421,8 +421,8 @@
    "sha256": "99a9198833ef5e65"
   },
   "arc/windows/5yr_2022_2026.json": {
-   "rows": 361,
-   "sha256": "d75c6999864a435b"
+   "rows": 356,
+   "sha256": "162baf642d1aa470"
   },
   "arc/windows/2yr_2023_2024.json": {
    "rows": 201,
@@ -549,8 +549,8 @@
    "sha256": "bb91e9132fd45c78"
   },
   "arc/decay/2024_2026_asof2026-08-18_hl45.json": {
-   "rows": 297,
-   "sha256": "5435361af349be18"
+   "rows": 292,
+   "sha256": "19fe7114d423aa98"
   },
   "arc/playoffs.json": {
    "rows": 567,
