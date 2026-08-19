@@ -2,7 +2,7 @@
  "league": "WNBA",
  "schema": "luma_metrics_v1",
  "rating": "arc_v2",
- "exported": "2026-08-17T04:06:19",
+ "exported": "2026-08-19T17:51:42",
  "files": {
   "arc/season_2003.json": {
    "rows": 170,
@@ -101,8 +101,8 @@
    "sha256": "1f4918b84ffbc72a"
   },
   "arc/season_2026.json": {
-   "rows": 225,
-   "sha256": "5928cac74ef911be"
+   "rows": 230,
+   "sha256": "7c222d9323d5b027"
   },
   "arc/windows/2yr_2003_2004.json": {
    "rows": 220,
@@ -440,6 +440,10 @@
    "rows": 146,
    "sha256": "f6b796543b7c7a76"
   },
+  "arc/windows/2yr_2025_2026.json": {
+   "rows": 127,
+   "sha256": "4c6d15d3256a95ce"
+  },
   "arc/decay/2003_2004_asof2004-10-12_hl45.json": {
    "rows": 220,
    "sha256": "4073b58f844b2f13"
@@ -543,6 +547,10 @@
   "arc/decay/2024_2026_asof2026-08-15_hl45.json": {
    "rows": 292,
    "sha256": "bb91e9132fd45c78"
+  },
+  "arc/decay/2024_2026_asof2026-08-18_hl45.json": {
+   "rows": 297,
+   "sha256": "5435361af349be18"
   },
   "arc/playoffs.json": {
    "rows": 567,
